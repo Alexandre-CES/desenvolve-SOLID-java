@@ -1,6 +1,6 @@
 package br.com.isp;
 
-public class Poupanca implements Conta {
+public class Poupanca implements Conta, CalculaJuros {
     @Override
     public void depositar(double valor) {
         System.out.println("Depositando um poupanca");

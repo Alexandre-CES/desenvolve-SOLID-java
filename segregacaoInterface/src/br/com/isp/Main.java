@@ -10,7 +10,6 @@ public class Main {
         System.out.println("Realizando operações na conta corrente");
         corrente.depositar(1000);
         corrente.sacar(200);
-        corrente.calculaJuros();
 
         System.out.println("Realizando operações na conta Poupança");
         poupanca.depositar(1000);

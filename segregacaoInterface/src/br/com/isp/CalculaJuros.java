@@ -1,4 +1,5 @@
 package br.com.isp;
 
-public interface CalculaJuros {
+public interface CalculaJuros{
+    void calculaJuros();
 }

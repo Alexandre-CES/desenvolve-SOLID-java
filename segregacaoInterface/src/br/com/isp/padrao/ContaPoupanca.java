@@ -9,7 +9,7 @@ public class ContaPoupanca implements Conta, CalculaJuros {
 
     @Override
     public void abrirConta() {
-
+        System.out.println("Conta Poupança aberta");
     }
 
     @Override

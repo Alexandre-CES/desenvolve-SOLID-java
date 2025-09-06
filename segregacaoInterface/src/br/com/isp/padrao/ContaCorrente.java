@@ -5,7 +5,7 @@ public class ContaCorrente implements Conta{
 
     @Override
     public void abrirConta() {
-
+        System.out.println("Conta Corrente aberta");
     }
 
     @Override

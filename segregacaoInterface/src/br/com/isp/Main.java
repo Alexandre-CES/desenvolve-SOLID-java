@@ -3,6 +3,7 @@ package br.com.isp;
 import br.com.isp.fabrica.AberturaConta;
 import br.com.isp.fabrica.ContaCorrenteAbertura;
 import br.com.isp.fabrica.ContaPoupancaAbertura;
+import br.com.isp.fabrica.ContaUniversitariaAbertura;
 import br.com.isp.padrao.ContaCorrente;
 import br.com.isp.padrao.ContaPoupanca;
 
@@ -15,6 +16,9 @@ public class Main {
 
         AberturaConta cp = new ContaPoupancaAbertura();
         cp.iniciaAbertura();
+
+        AberturaConta cu = new ContaUniversitariaAbertura();
+        cu.iniciaAbertura();
 
     }
 }

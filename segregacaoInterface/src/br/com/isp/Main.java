@@ -1,20 +1,20 @@
 package br.com.isp;
 
+import br.com.isp.fabrica.AberturaConta;
+import br.com.isp.fabrica.ContaCorrenteAbertura;
+import br.com.isp.fabrica.ContaPoupancaAbertura;
+import br.com.isp.padrao.ContaCorrente;
+import br.com.isp.padrao.ContaPoupanca;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Corrente corrente = new Corrente();
-        Poupanca poupanca = new Poupanca();
+        AberturaConta cc = new ContaCorrenteAbertura();
+        cc.iniciaAbertura();
 
-        System.out.println("Realizando operações na conta corrente");
-        corrente.depositar(1000);
-        corrente.sacar(200);
-
-        System.out.println("Realizando operações na conta Poupança");
-        poupanca.depositar(1000);
-        poupanca.sacar(200);
-        poupanca.calculaJuros();
+        AberturaConta cp = new ContaPoupancaAbertura();
+        cp.iniciaAbertura();
 
     }
 }

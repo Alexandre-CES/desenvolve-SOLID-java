@@ -3,6 +3,7 @@ import br.com.moveon.fabrica.FabricaDrone;
 import br.com.moveon.fabrica.FabricaMoto;
 import br.com.moveon.fabrica.FabricaVeiculo;
 import br.com.moveon.veiculo.IVeiculo;
+import br.com.moveon.veiculo.IVeiculoVoador;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -24,5 +25,11 @@ public class Main {
 
         drone.exibirTipo();
         drone.iniciaRota();
+
+        if (drone instanceof IVeiculoVoador){
+            IVeiculoVoador veiculoVoador = (IVeiculoVoador)drone;
+
+            veiculoVoador.voar();
+        }
     }
 }

@@ -1,4 +1,5 @@
 import br.com.moveon.fabrica.FabricaCarro;
+import br.com.moveon.fabrica.FabricaDrone;
 import br.com.moveon.fabrica.FabricaMoto;
 import br.com.moveon.fabrica.FabricaVeiculo;
 import br.com.moveon.veiculo.IVeiculo;
@@ -17,5 +18,11 @@ public class Main {
         IVeiculo moto = fabricaMoto.criarVeiculo();
         moto.exibirTipo();
         moto.iniciaRota();
+
+        FabricaVeiculo fabricaDrone = new FabricaDrone();
+        IVeiculo drone = fabricaDrone.criarVeiculo();
+
+        drone.exibirTipo();
+        drone.iniciaRota();
     }
 }
